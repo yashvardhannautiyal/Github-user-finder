@@ -37,8 +37,8 @@ function HeroSection() {
   return (
     <>
       <div className="dark:bg-gray-950 dark:text-amber-50 flex-grow">
-        <div className="flex flex-col items-center justify-center pt-10">
-          <p className="text-2xl sm:text-4xl text-purple-700 font-bold mb-2 sm:mb-6">
+        <div className="flex flex-col items-center justify-center pt-4">
+          <p className="text-2xl sm:text-3xl text-purple-700 font-bold mb-2 sm:mb-6">
             Search Github User Id
           </p>
           <SearchBox
@@ -56,7 +56,7 @@ function HeroSection() {
         </div>
       </div>
       <footer>
-        <div className="dark:bg-black dark:text-amber-50 p-4 flex items-center justify-center text-sm sm:text-lg bottom-0">
+        <div className="dark:bg-black dark:text-amber-50 p-4 flex items-center justify-center text-sm sm:text-normal bottom-0">
           <p className="flex gap-1.5 items-center font-medium">
             Made with
             <FaHeart className="text-red-600" />

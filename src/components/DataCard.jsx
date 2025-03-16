@@ -1,38 +1,38 @@
-import { PiTwitterLogoThin } from "react-icons/pi";
-import { CiLocationOn } from "react-icons/ci";
+import { FaTwitter } from "react-icons/fa";
+import { IoLocation } from "react-icons/io5";
 import { IoIosArrowForward } from "react-icons/io";
 import { TiPin } from "react-icons/ti";
 import { IoPeople } from "react-icons/io5";
 function DataCard({ userData }) {
   return (
     <div className="text-xs sm:text-lg">
-      <div className="dark:text-amber-50 flex flex-col items-start justify-center mt-8 px-1.5 sm:px-5 py-2 sm:py-4 card-background rounded-lg">
+      <div className="dark:text-amber-50 flex flex-col items-start justify-center mt-3 px-1.5 sm:px-5 py-2 sm:py-4 card-background rounded-lg">
         <div className="flex items-center justify-center gap-4">
           <img
             src={userData.avatar_url}
             alt="user-profile-picture"
             className="h-14 rounded-full"
           />
-          <div className="font-bold">
-            <h2 className="text-xl sm:text-4xl">
+          <div>
+            <h2 className="text-xl sm:text-2xl font-bold">
               {userData.name || "No name"}
             </h2>
-            <p className="text-xs sm:text-lg">@{userData.login}</p>
+            <p className="text-xs sm:text-lg font-medium">@{userData.login}</p>
           </div>
         </div>
-        <div className="sm:px-5 mt-3">
+        <div className="sm:px-5 mt-1">
           <p className="mt-2">{userData.bio || "No bio available"}</p>
-          <div className="my-3 flex gap-7 sm:gap-14">
+          <div className="my-2 flex gap-7 sm:gap-14">
             <p className="flex items-center gap-2">
-              <PiTwitterLogoThin />
+              <FaTwitter />
               {userData.twitter_username || "No twitter username"}
             </p>
             <p className="flex items-center gap-2">
-              <CiLocationOn />
+              <IoLocation />
               {userData.location || "No location available"}
             </p>
           </div>
-          <div className="my-3 gap-14">
+          <div className="my-2 gap-14">
             <div className=" flex">
               <p className="flex items-center gap-2">
                 <IoPeople />
@@ -47,9 +47,7 @@ function DataCard({ userData }) {
               </p>
             </div>
           </div>
-        </div>
-
-        <a
+          <a
           href={userData.html_url}
           target="_blank"
           className="underline text-purple-600 hover:cursor-pointer hover:text-purple-500 flex items-center font-medium"
@@ -57,6 +55,9 @@ function DataCard({ userData }) {
           Visit user
           <IoIosArrowForward />
         </a>
+        </div>
+
+        
       </div>
     </div>
   );
