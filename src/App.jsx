@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar";
-import HeroSection from "./Components/HeroSection";
+import HeroSection from "./components/HeroSection";
 function App() {
   return (
     <div className="flex flex-col h-screen">
