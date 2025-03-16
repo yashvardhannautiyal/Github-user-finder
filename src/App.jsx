@@ -1,10 +1,12 @@
+import Navbar from "./components/Navbar";
+import HeroSection from "./Components/HeroSection";
 function App() {
-  
   return (
-    <>
-      <p>this is github finder app</p>
-    </>
-  )
+    <div className="flex flex-col h-screen">
+      <Navbar />
+      <HeroSection className="flex-grow" />
+    </div>
+  );
 }
 
-export default App
+export default App;
