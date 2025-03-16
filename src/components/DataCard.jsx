@@ -6,7 +6,7 @@ import { IoPeople } from "react-icons/io5";
 function DataCard({ userData }) {
   return (
     <div className="text-xs sm:text-lg">
-      <div className="dark:text-amber-50 flex flex-col items-start justify-center mt-3 px-1.5 sm:px-5 py-2 sm:py-4 card-background rounded-lg">
+      <div className="dark:text-amber-50 flex flex-col items-start justify-center mt-6 px-5 card-background rounded-lg">
         <div className="flex items-center justify-center gap-4">
           <img
             src={userData.avatar_url}

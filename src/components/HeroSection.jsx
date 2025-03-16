@@ -1,7 +1,7 @@
 import { useState } from "react";
 import SearchBox from "./SearchBox";
 import DataCard from "./DataCard";
-import { FaHeart } from "react-icons/fa6";
+// import { FaHeart } from "react-icons/fa6";
 function HeroSection() {
   const [userName, setUserName] = useState("");
   const [userData, setUserData] = useState(null);
@@ -36,7 +36,8 @@ function HeroSection() {
 
   return (
     <>
-      <div className="dark:bg-gray-950 dark:text-amber-50 flex-grow">
+      {/* <div className="dark:bg-gray-950 dark:text-amber-50 flex-grow"> */}
+      <div className="dark:text-amber-50">
         <div className="flex flex-col items-center justify-center pt-4">
           <p className="text-2xl sm:text-3xl text-purple-700 font-bold mb-2 sm:mb-6">
             Search Github User Id
@@ -55,7 +56,7 @@ function HeroSection() {
           {userData && <DataCard userData={userData} />}
         </div>
       </div>
-      <footer>
+      {/* <footer>
         <div className="dark:bg-black dark:text-amber-50 p-4 flex items-center justify-center text-sm sm:text-normal bottom-0">
           <p className="flex gap-1.5 items-center font-medium">
             Made with
@@ -63,7 +64,7 @@ function HeroSection() {
             by Yash Vardhan Nautiyal.
           </p>
         </div>
-      </footer>
+      </footer> */}
     </>
   );
 }
